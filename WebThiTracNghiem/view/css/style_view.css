@@ -1,0 +1,56 @@
+/* header.top-bar.text-dark {
+    height: 112px;
+    background-color: rgb(240, 240, 240);
+     background-color: white; 
+} */
+
+.core-nav .wrap-core-nav-list .core-nav-list {
+    /* display: inline-block; */
+    margin: 0 0 -5px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.container-login {
+    margin-top: 100px;
+}
+
+.rtl .top-bar .lng-drop .btn-group .btn.dropdown-toggle::after {
+    margin-left: 93px;
+}
+.box-chuyen-de .box {
+    max-width: 94%;
+    height: 450px;
+}   
+
+.box-chuyen-de .box .card-img-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 300px;
+}
+
+.box-ki-thi .card {
+    max-width: 94%;
+    height: 450px;
+}   
+
+.box-ki-thi .card img {
+   
+    max-height: 300px;
+}
+a.vao-thi {
+    color: white;
+    padding: 5px;
+    display: block;
+}
+a.vao-thi:hover {
+    color: #019ff8;
+    padding: 5px;
+    display: block;
+}
+

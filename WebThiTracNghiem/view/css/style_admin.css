@@ -1,0 +1,541 @@
+.container {
+    margin: 0px auto;
+    padding: 0px;
+    min-height: 450px;
+    /* max-width: 1200px; */
+}
+
+.bieudo {
+    width: 70%;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: rgb(229, 229, 10);
+}
+
+.bg-green {
+    background-color: green;
+}
+
+
+/* CSS cho menu  */
+
+.menu ul.main-menu li img {
+    width: 100px;
+    padding-top: 5px;
+}
+
+.menu {
+    background-color: #eaeaea;
+}
+
+.menu ul.main-menu {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0px auto;
+    align-items: center;
+    position: relative;
+}
+
+.menu ul.main-menu li {
+    padding: 10px 10px 10px 0px;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.menu ul.main-menu li a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* .menu ul.main-menu li:hover:not(li.logo-cong-ty, .login) {
+    background-color: green;
+} */
+
+.menu ul.main-menu li:hover:not(.login) a {
+    color: red;
+}
+
+.menu ul.main-menu li.login {
+    position: absolute;
+    right: 5px;
+    top: 17px;
+    z-index: 3;
+}
+
+.login .setup-user {
+    display: none;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login .setup-user a {
+    font-size: 14px;
+}
+
+.login .setup-user div {
+    margin: 10px 0px 5px 0px;
+}
+
+.login .setup-user div:hover a {
+    color: rgb(7, 164, 7);
+}
+
+.login .xin-chao-user:hover .setup-user {
+    display: block;
+}
+
+
+/* CSS SlideShow */
+
+.banner {
+    position: relative;
+    z-index: 2;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+}
+
+.banner input {
+    background-color: none;
+    border: none;
+    height: 50px;
+    padding: 8px;
+}
+
+.banner input:hover {
+    background-color: #878686;
+}
+
+.banner input {
+    position: absolute;
+    top: 40%;
+}
+
+.banner #pre {
+    left: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.banner #next {
+    right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+
+/* CSS box-left   */
+
+.box-left .info-all {
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.box-left .box-img {
+    height: 150px;
+}
+
+.box-left .box .box-content p {
+    font-size: 30px;
+    color: rgb(233, 233, 233);
+    padding: 8px;
+}
+
+.box-left .box .xem-chi-tiet {
+    margin: 0px 0px 15px 15px;
+}
+
+.box-left .box .xem-chi-tiet a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.box-left .box .xem-chi-tiet a:hover {
+    color: rgb(36, 36, 36);
+}
+
+.info-all h3 {
+    margin: 15px;
+    padding-top: 20px;
+}
+
+.box-left .info-all .four-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.four-box .box img {
+    width: 150px;
+}
+
+.four-box .box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0 0 5px black;
+    border-radius: 3px;
+}
+
+.box-right .thong-ke,
+.top-5 {
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.box-title h4 {
+    padding: 10px;
+}
+
+.box-right .box-title {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.box-right .box-content {
+    height: 200px;
+    margin: 15px;
+}
+
+
+/* CSS Box kỳ thi  */
+
+.title-ky-thi {
+    margin: 30px;
+}
+
+
+/* .title-ky-thi h2,
+h3 {
+    text-align: center;
+
+} */
+
+.ky-thi {
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ky-thi .box {
+    width: 270px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+    box-shadow: 0 0 5px rgb(132, 132, 254);
+}
+
+.ky-thi .box .box-title {
+    text-align: center;
+}
+
+.ky-thi .box .box-content .lam-ngay {
+    margin: 20px 0px 0px 0px;
+}
+
+.ky-thi .box .box-content .text {
+    height: 100px;
+}
+
+.ky-thi .box .box-content a {
+    background-color: orange;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.ky-thi .box .box-content a:hover {
+    font-weight: bold;
+}
+
+.footer-trangchu {
+    margin-top: 150px;
+    padding: 12px 0px 2px 0px;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* CSS Quản lý tài khoản  */
+
+
+/*edit-user*/
+
+
+/*end*/
+
+
+/*list-user*/
+
+.container-user {
+    max-width: 1200px;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.container-user .head-top-user p {
+    font-size: 35px;
+    font-weight: bolder;
+    background: rgb(0, 162, 255);
+    padding: 15px;
+    margin-top: 0px;
+    color: white;
+}
+
+.content-boder-user .title-boder-top-user p {
+    /* background: green; */
+    padding: 15px 0px;
+    margin: 0px;
+    /* color: yellow; */
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.content-boder-user .main-user table {
+    width: 100%;
+    margin-top: 15px;
+    background: rgba(235, 235, 235, 0.68);
+    border-collapse: collapse;
+}
+
+.content-boder-user .main-user table a,
+.add-user a {
+    background: rgb(220 220 220);
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    /* margin-left: 15px; */
+    border-radius: 10px;
+}
+
+.content-boder-user .main-user table a:hover,
+.add-user a:hover {
+    background: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.content-boder-user .main-user table thead tr td {
+    background: #3939a1;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+}
+
+.content-boder-user .main-user table tbody tr td {
+    line-height: 50px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.footer-ql-user p {
+    background: blueviolet;
+    color: white;
+    padding: 15px;
+}
+
+
+/*nhập thêm user*/
+
+.container-user .add-user a {
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/**end/
+/*end*/
+
+
+/*register-user*/
+
+.container-user .head-top-user a {
+    text-decoration: none;
+}
+
+.content-boder-user form label {
+    line-height: 35px;
+    font-size: 16px;
+    color: #454545;
+}
+
+.content-boder-user form input {
+    /* display: block; */
+    line-height: 25px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+form#registrationForm:not(label) {
+    /* text-align: center; */
+    margin-top: 5px;
+    /* margin-left: 150px; */
+    margin-right: 150px;
+    border: 1px solid black;
+    padding: 0px 0px 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px purple;
+}
+
+.content-boder-user form button {
+    margin-top: 20px;
+    background: gray;
+    color: white;
+    border: none;
+    /* height: 25px; */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.content-boder-user form button:hover {
+    background: rgb(0, 140, 255);
+}
+
+
+/*end*/
+
+a.register-btn {
+    height: 50px;
+    padding: 0px;
+    margin-top: 45px;
+    padding-top: 17px;
+}
+
+.col-xl-10.col-lg-12.col-md-9.justify-content-center {
+    padding-left: 220px;
+}
+
+.login {
+    padding-top: 70px;
+}
+
+.btn {
+    background-color: #c9c9c9;
+    padding: 10px;
+    color: black;
+}
+
+.dsch table a {
+    text-decoration: none;
+    color: white;
+    background: rgb(16, 16, 134);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cauhoi {
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px purple;
+}
+
+.dapan {
+    border: 1px solid rgb(12, 210, 62);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px green;
+}
+
+table.table.table_dsch {
+    margin-left: 0px;
+}
+
+
+/* CSS chọn câu hỏi  */
+
+.chon_cauhoi table .cau_hoi {
+    width: 300px;
+}
+
+.chon_cauhoi table .chuyen_de {
+    width: 300px;
+}
+
+.chon_cauhoi table input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-top: 18px;
+}
+
+/* CSS Danh sách đề thi  */
+select.loc_dethi {
+    height: 32px;
+    border-radius: 5px;
+    width: 300px;
+    text-indent: 10px;
+}
+
+.add-user button.btn {
+    margin-top: 0px;
+}
