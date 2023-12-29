@@ -371,7 +371,7 @@ include "header.php";
 
 
             case "dsdt":
-                $dsdt = load_dethi($_GET['idlt']);
+                $dsd = load_dethi($_GET['idlt']);
                 if (isset($_GET['idlt'])) {
                     $id_lichthi = $_GET['idlt'];
                 }

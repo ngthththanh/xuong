@@ -28,7 +28,7 @@
                     </tfoot>
                     <tbody>
                       
-                        <?php foreach ($dsdt as $key => $value) : extract($value) ?>
+                        <?php foreach ($dsd as $key => $value) : extract($value) ?>
                         <input type="hidden" name="iddt" value="<?= $id?>">
                             <td><?php echo $id ?></td>
                             <td><?php echo $ten_de ?></td>
