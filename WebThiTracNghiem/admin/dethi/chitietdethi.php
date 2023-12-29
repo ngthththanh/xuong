@@ -1,13 +1,16 @@
-<div class="container">
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <h2>DANH SÁCH ĐỀ THI</h2>
-        </div>
-    </nav>
-
-    <div>
-        <div>
-            <form action="?act=dsdt" method="post">
+<!-- Begin Page Content -->
+<div class="container-fluid">
+     <!-- Page Heading -->
+     <h1 class="h3 mb-3 text-gray-800">Danh sách đề thi</h1>
+     <p class="mb-3"><a  href="?act=add-chuyende"></a></p>
+     <!-- DataTales Example -->
+     <div class="card shadow mb-4">
+          <div class="card-header py-3">
+               <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+          </div>
+          <div class="card-body">
+               <div class="table-responsive">
+               <form action="?act=dsdt" method="post">
                 <select name="id_lichthi" id="" class='loc_dethi'>
                     <option value="" hidden>--Chọn kỳ thi --</option>
                     <?php foreach ($ds_lichthi as $key => $value) : ?>
@@ -16,17 +19,27 @@
                 </select>
                 <button class="btn" type="submit" name="btnTimkiem">Tìm kiếm</button>
             </form>
-        </div>
-        <br>
-        <table class="table table_dsch">
-            <tr>
-                <th>Tên kỳ thi</th>
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                         <thead>
+                              <tr>
+                              <th>Tên kỳ thi</th>
                 <th>Tên kỳ thi</th>
                 <th scope="col">STT</th>
                 <th>Các câu hỏi</th>
                 <th>Thao tác</th>
-            </tr>
-
+                              </tr>
+                         </thead>
+                         <tfoot>
+                              <tr>
+                              <th>Tên kỳ thi</th>
+                <th>Tên kỳ thi</th>
+                <th scope="col">STT</th>
+                <th>Các câu hỏi</th>
+                <th>Thao tác</th>
+                              </tr>
+                         </tfoot>
+                         <tbody>
+                            
             <?php
             $previousTestId = null;
             $previousExamId = null;
@@ -47,7 +60,7 @@
                     <td><?= $ten_cauhoi . "</br>" ?></td>
                     <td>
                         <!-- <a class="btn" href="">Sửa</a> -->
-                        <a class="btn" href="">Xóa</a>
+                        <a class="btn btn-danger btn-circle btn-sm" href=""><i class="fas fa-trash"></i></a></td>
                     </td>
                 </tr>
                 <?php
@@ -55,6 +68,14 @@
                 $previousExamId = $id_lichthi;
                 ?>
             <?php endforeach; ?>
-        </table>
-    </div>
+                         </tbody>
+                    </table>
+               </div>
+          </div>
+     </div>
+
 </div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->

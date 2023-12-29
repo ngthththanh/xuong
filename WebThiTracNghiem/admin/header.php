@@ -145,9 +145,9 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item active">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="?act=ctdt">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Chi tiết đề thi</span></a>
             </li>
 
             <!-- Divider -->
